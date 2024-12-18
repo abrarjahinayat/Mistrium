@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Habibi&display=swap');
+
+/* font-family: "Gupter", serif; */
+/* font-family: "Habibi", serif; */
+
+:root{
+    --primary: #C4A586;
+    --black: #000000;
+    --2nd_black: #292019;
+    --pitch: #72696A;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+/* =============nav part start ================ */
+header{
+    margin-top: 20px;
+}
+
+nav .nav_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_wrapper ul{
+    display: flex;
+    gap: 45px;
+}
+.nav_wrapper ul li{
+    list-style: none;
+}
+.nav_wrapper ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--black);
+    font-family: "Gupter", serif;
+    letter-spacing: 2%;
+    position: relative;
+    transition: 0.4s;
+}
+
+.nav_wrapper ul li a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--black);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.4s;
+}
+.nav_wrapper ul li .active{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--black);
+    font-family: "Gupter", serif;
+    letter-spacing: 2%;
+    position: relative;
+    transition: 0.4s;
+}
+
+.nav_wrapper ul li .active::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--black);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.4s;
+}
+.nav_wrapper ul li a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+.nav_wrapper ol{
+    display: flex;
+    gap: 30px;
+}
+.nav_wrapper ol li{
+    list-style: none;
+    font-size: 35px;
+    position: relative;
+}
+.nav_wrapper ol li a{
+    color: var(--black);
+}
+
+.nav_wrapper ol li .trashbin::after{
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    border-radius: 50%;
+}
+
+/* =============nav part end ================ */
+/* =============banner part start ================ */
+#banner .banner_wrapper{
+    display: flex;
+    margin-top: 72px;
+}
+#banner .banner_wrapper .left{
+    width: 70%;
+
+}
+#banner .banner_wrapper .left h1{
+    font-size: 65px;
+    font-weight: 300;
+    line-height: 76px;
+    letter-spacing: 2%;
+    color: var(--2nd_black);
+    font-family: "Habibi", serif;
+}
+#banner .banner_wrapper .left p{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2%;
+    line-height: 28px;
+    color: var(--2nd_black);
+    width: 401px;
+    margin-top: 55px;
+}
+#banner .banner_wrapper .left p span{
+    margin-top: 60px;
+    display: inline-block;
+}
+#banner .banner_wrapper .left a{
+    padding: 30px 70px;
+    background-color: var(--primary);
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 43px;
+    display: inline-block;
+    font-size: 27px;
+    font-weight: 500;
+    letter-spacing: 2%;
+    font-family: "Gupter", serif;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+#banner .banner_wrapper .left a:hover{
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    background-color: transparent;
+    transition: 0.4s;
+}
+#banner .banner_wrapper .left .btn{
+    margin-left: 33px;
+}
+#banner .banner_wrapper .right{
+    width: 30%;
+    
+}
+/* =============banner part end ================ */
+/* ================client part start */
+#client{
+    margin-top: 105px;
+}
+#client h2{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    font-family: "Gupter", serif;
+}
+#client ul{
+    display: flex;
+    gap: 165px;
+    justify-content: center;
+    margin-top: 96px;
+    margin-bottom: 66px;
+}
+#client ul li{
+    list-style: none;
+}
+#client ul li a{
+    text-decoration: none;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: "Gupter", serif;
+    letter-spacing: 2%;
+    color: var(--pitch);
+}
+/* ================client part end */
+/* =============Product part start ================ */
+#Product{
+    margin-top: 66px;
+    margin-bottom: 154px;
+}
+#Product .Product_wrapper{
+    display: flex;
+    align-items: center;
+}
+#Product .Product_wrapper .left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 130px;
+    margin-right: 100px;
+}
+#Product .Product_wrapper .left .left_text{
+
+}
+#Product .Product_wrapper .left h4{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2%;  
+    font-family: "Gupter", serif;
+    color: var(--black);
+}
+#Product .Product_wrapper .left p{
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2%;  
+    font-family: "Gupter", serif;
+    color: var(--primary);
+    margin-top: 41px;
+
+}
+#Product .Product_wrapper .right h4{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2%;  
+    font-family: "Gupter", serif;
+    color: var(--black);
+}
+#Product .Product_wrapper .right p{
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2%;  
+    font-family: "Gupter", serif;
+    color: var(--pitch);
+    margin-top: 41px;
+
+}
+#Product .Product_wrapper .right{
+    width: 55%;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 74px 48px 90px 96px;
+    gap: 170px;
+}
+
+/* =============Product part end ================ */
+/* =============selling part start ================ */
+#selling{
+    margin-top: 154px;
+    margin-bottom: 77px;
+}
+#selling .container h2{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    font-family: "Gupter", serif;
+    color: var(--black);
+
+}
+#selling .selling_text ul{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: end;
+}
+#selling .selling_text ul h4{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Gupter", serif;
+    letter-spacing: 2%;
+    color: var(--black);
+}
+#selling .selling_text ul a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--pitch);
+    letter-spacing: 2%;
+    font-family: "Gupter", serif;
+
+}
+#selling .selling_text ul a .icon{
+   margin-left: 10px;
+}
+/* =============selling part end ================ */
+/* =============cart part start ================ */
+#cart{
+    margin-bottom: 300px;
+}
+#cart .cart_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+#cart .cart_wrapper .chair{
+    width: 30%;
+    height: 300px;
+    background: var(--primary);
+    position: relative;
+}
+#cart .cart_wrapper .chair button{
+  display: flex;
+  border-radius: 25px;
+  border: none;
+  padding: 25px 25px;
+  background-color: #D1A070;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  position: absolute;
+  top: -30px;
+  left: 100px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Gupter", serif;
+  letter-spacing: 2%;
+  width: 208px;
+}
+#cart .cart_wrapper .chair button .icon{
+    font-size: 20px;
+}
+
+#cart .cart_wrapper .chair h4{
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2%;
+    line-height: 76px;
+    color: var(--black);
+    font-family: "Habibi", serif;
+    margin-top: 36px;
+    margin-left: 84px;
+
+}
+#cart .cart_wrapper .chair .chair_price{
+    display: flex;
+    gap: 45px;
+    margin-left: 145px;
+    margin-top: 8px;
+}
+#cart .cart_wrapper .chair h6{
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: var(--black);
+    font-family: "Gupter", serif;
+
+}
+#cart .cart_wrapper .chair del{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: var(--pitch);
+    font-family: "Gupter", serif;
+
+}
+
+#cart .cart_wrapper .chair img{
+    margin-left: 70px;
+    margin-top: 10px;
+}
+#cart .cart_wrapper .chair .chair3{
+    margin-left: 118px;
+    margin-top: 10px;
+}
+/* =============cart part end ================ */
+/* =============Graphic part Start ================ */
+#graphic{
+    margin-top: 95px;
+}
+#graphic .graphic_wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 58px;
+    margin-bottom: 54px;
+}
+#graphic .graphic_wrapper h2{
+    font-size: 55px;
+    font-weight: 600;
+    font-family: "Gupter", serif;
+    color: var(--black);
+    width: 461px;
+    margin-top: 71px;
+}
+#graphic .graphic_wrapper p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 2%;
+   font-family: "Habibi", serif;
+    color: var(--black);
+    width: 559px;
+    margin-top: 50px;
+   
+}
+#graphic .graphic_wrapper .istiak{
+    display: flex;
+    margin-top: 83px;
+    margin-left: 112px;
+    gap: 85px;
+}
+#graphic .graphic_wrapper .istiak h3{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Gupter", serif;
+    letter-spacing: 2%;
+}
+#graphic .graphic_wrapper .istiak h4{
+    font-size: 17px;
+    font-weight: 400;
+   font-family: "Habibi", serif;
+    letter-spacing: 2%;
+    line-height: 76px;
+}
+#graphic .graphic_wrapper .istiak i{
+    font-size: 22px;
+    color: var(--primary);
+}
+#graphic .graphic_wrapper .istiak .star{
+    font-size: 22px;
+    color: var(--pitch);
+}
+#graphic .graphic_wrapper .icon_wrapper{
+    display: flex;
+    justify-content: end;
+    gap: 19px;
+}
+#graphic .graphic_wrapper .icon_wrapper i{
+   font-size: 33px;
+}
+#graphic .graphic_wrapper .icon_wrapper i:hover{
+   color: #B99272;
+   cursor: pointer;
+}
+#graphic .container .girls{
+    margin-left: 290px;
+    display: flex;
+    gap: 36px;
+}
+/* =============Graphic part end ================ */
+/* =============notification part start ================ */
+#notification{
+    margin-top: 157px;
+    margin-bottom: 114px;
+}
+#notification .notification_wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 108px;
+    margin-right: 48px;
+}
+#notification .notification_wrapper p{
+   padding: 15px 0;
+   border: none;
+   border-radius: 30px;
+   border: 2px solid var(--primary);
+   color: var(--primary);
+   background-color: transparent;
+   font-size: 16px;
+   font-weight: 700;
+   font-family: "Gupter", serif;
+   letter-spacing: 2%;
+   width: 240px;
+   text-align: center;
+
+}
+#notification .notification_wrapper h2{
+    font-size: 30px;
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 2%;
+    color: var(--black);
+    width: 349px;
+    margin-top: 25px;
+}
+#notification .notification_wrapper .input_wrapper input{
+    margin-top: 16px;
+    /* padding: 29px 50px; */
+    border-radius: 13px;
+    width: 492px;
+    height: 78px;
+    padding-left: 26px;
+    background-color: #D9D9D9;
+    border: none;
+}
+#notification .notification_wrapper input::placeholder{
+    font-size: 18px;
+    font-family: "Gupter", serif;
+    color: var(--black);
+    font-weight: 500;
+    border-radius: 13px;
+    
+}
+#notification .notification_wrapper .input_wrapper{
+    position: relative;
+}
+#notification .notification_wrapper .input_wrapper button{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Gupter", serif;
+    letter-spacing: 2%;
+    color: #ffffff;
+    padding: 23px 41px;
+    background: #C4A586;
+    border: none;
+    border-radius: 13px;
+    position: relative;
+    right: 270px;
+    top: 2px;
+}
+#notification .notification_wrapper .input_wrapper button span{
+    color: #000000;
+    padding: 23px 41px;
+    background-color: #DACDBF;
+    border-radius: 0 13px 13px 0;
+    position: absolute;
+    right: -82px;
+    top: 0;
+}
+#notification .notification_wrapper .right{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: relative;
+}
+#notification .notification_wrapper .right .img{
+  display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    left: -370px;
+    bottom: 40px;
+}
+/* =============notification part end ================ */
